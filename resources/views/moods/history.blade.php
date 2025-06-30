@@ -118,6 +118,7 @@
                 font-size: 0.95rem;
             }
 
+
             /* Styled heading for "Your Mood History" */
             .page-heading {
                 font-size: 1.6rem;

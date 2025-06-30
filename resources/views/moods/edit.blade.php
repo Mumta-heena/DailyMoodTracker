@@ -89,7 +89,7 @@
             <div class="col-12 col-md-8 col-lg-6">
                 <div class="card">
                     <div class="mb-4 text-center">
-                        <h3 class="fw-bold" style="font-size: 2rem; color: #7FD8C0;">
+                        <h3 class="fw-bold" style="font-size: 2rem; color: #47a58c;">
                             Edit Your Mood
                         </h3>
                         <p class="text-secondary-light">Update your mood entry below</p>
