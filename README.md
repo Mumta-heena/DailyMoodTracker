@@ -18,8 +18,8 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Mumta-heena/DailyMoodTracker.git
-    cd DailyMoodTracker
+    git clone [Your GitHub Repository Link Here]
+    cd [your-project-folder]
     ```
 
 2.  **Install PHP dependencies:**
@@ -27,24 +27,40 @@ Follow these steps to set up and run the project locally.
     composer install
     ```
 
-3.  **Copy the environment file:**
+3.  **Install Node.js dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Copy the environment file:**
     ```bash
     cp .env.example .env
     ```
 
-4.  **Generate the application key:**
+5.  **Generate the application key:**
     ```bash
     php artisan key:generate
     ```
 
-5.  **Configure your database** in the `.env` file (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, etc.).
+6.  **Configure your database** in the `.env` file (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, etc.).
 
-6.  **Run database migrations** to create the necessary tables:
+7.  **Run database migrations** to create the necessary tables:
     ```bash
     php artisan migrate
     ```
 
-7.  **Serve the application:**
+8.  **Seed the database with a demo user and data:**
+    ```bash
+    php artisan db:seed
+    ```
+
+9.  **Build the front-end assets for production:**
+    ```bash
+    npm run build
+    ```
+    *Note: For local development, you can use `npm run dev` to watch for changes.*
+
+10. **Serve the application:**
     ```bash
     php artisan serve
     ```
