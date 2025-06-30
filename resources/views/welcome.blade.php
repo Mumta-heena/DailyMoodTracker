@@ -88,8 +88,8 @@
     </head>
     <body class="antialiased">
         <div class="hero-section">
-            <h1 class="text-5xl font-extrabold text-[#333333] mb-6">
-                <span class="text-[#A2D9CE]">Track</span> Your Moods
+            <h1 class="text-5xl font-extrabold mb-6">
+                <span class="text-[#A2D9CE]">Track</span> <span class="font-extrabold text-[#333333]">Your Moods</span>
             </h1>
             <p class="text-lg text-[#777777] mb-8 leading-relaxed">
                 Understand your emotional well-being with our simple and insightful mood tracker. Log your feelings daily,
@@ -117,7 +117,7 @@
             </div>
 
             <div class="mt-10 text-sm text-[#777777]">
-                A project by Gemini AI
+                A project by Mumtaheena Binte Ahmed
             </div>
         </div>
     </body>

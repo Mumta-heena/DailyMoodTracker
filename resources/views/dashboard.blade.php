@@ -16,7 +16,7 @@
                 transform: translateY(-3px);
             }
             .text-primary-accent {
-                color: #A2D9CE !important; /* Primary Accent */
+                color: #58a394 !important; /* Primary Accent */
             }
             .text-secondary-accent {
                 color: #B3E0FF !important; /* Secondary Accent */
@@ -70,10 +70,14 @@
     @endpush
 
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-primary-dark leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
+        <header class="flex items-center justify-between border-b border-primary-accent pb-3 mb-8">
+            <h1 class="text-3xl font-extrabold text-primary-accent tracking-tight leading-tight">
+                {{ __('Dashboard') }}
+            </h1>
+            {{-- Optional: You can add a button or breadcrumb here if you want --}}
+        </header>
     </x-slot>
+
 
     <div class="py-12" style="background-color: #F5F5F5;">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -151,7 +155,7 @@
                     <p class="text-secondary-light mb-4">Your mood distribution over the last 30 days.</p>
                     @if(isset($mostFrequentMood) && $mostFrequentMood)
                         <div class="alert alert-light border-start border-4 border-primary-accent p-3 mb-4 rounded-lg">
-                            <p class="mb-0 text-primary-dark">Your most frequent mood is: <strong class="text-primary-accent">{{ $mostFrequentMood->mood_type }}</strong> ({{ $mostFrequentMood->count }} times)</p>
+                            <p class="mb-0 text-primary-dark">Mood of the Month: <strong class="text-primary-accent">{{ $mostFrequentMood->mood_type }}</strong> ({{ $mostFrequentMood->count }} times)</p>
                         </div>
                         <div style="height: 300px;">
                             <canvas id="moodChart"></canvas>
