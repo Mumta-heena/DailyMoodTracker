@@ -18,8 +18,8 @@ Follow these steps to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [Your GitHub Repository Link Here]
-    cd [your-project-folder]
+    git clone https://github.com/Mumta-heena/DailyMoodTracker.git
+    cd DailyMoodTracker
     ```
 
 2.  **Install PHP dependencies:**
