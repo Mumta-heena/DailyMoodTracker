@@ -14,8 +14,8 @@ class MoodSeeder extends Seeder
      */
     public function run(): void
     {
-        // Find the demo user created by UserSeeder
-        $user = User::where('email', 'demo@example.com')->first();
+        // Find the demo user created by UserSeeder using the phone_number
+        $user = User::where('phone_number', '1234567890')->first();
 
         // Only run if the user exists
         if ($user) {

@@ -13,14 +13,13 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // Create a demo user
+        // Create a demo user using the phone_number as the unique identifier
         User::firstOrCreate(
-            ['email' => 'demo@example.com'],
+            ['phone_number' => '1234567890'],
             [
                 'name' => 'Demo User',
                 'password' => Hash::make('password'),
                 'email_verified_at' => now(),
-                'phone_number' => '1234567890', // Include phone_number
             ]
         );
     }
